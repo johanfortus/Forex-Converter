@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block content %}
+    <!-- FORM -->
+    <section class="d-flex justify-content-center ">
+        <div class="container-lg">
+            <div class="row d-flex justify-content-center">
+                <div class="col-12 text-center mt-5 mb-3">
+                    <!-- TITLE -->
+                    <div class='h1 fw-bold'>Currency Converter</div>
+                </div>
+                <div>
+                    <!-- FLASH MESSAGE -->
+                    {% for msg in get_flashed_messages() %}
+                    <div class="d-flex justify-content-center my-2">
+                        <div class="text-center bg-danger text-light col-6 col-md-3 p-3 rounded">
+                            {{ msg }}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- FORM -->
+                <form action="/result" class="d-flex flex-column align-items-center">
+                    <div class="mb-5 col-12 col-md-7">
+                        <label class="form-label"><span class="h5">From:</span></label>
+                        <input type="text" class="form-control fs-5" name="FROM">
+                    </div>
+                    <div class="mb-5 col-12 col-md-7">
+                        <label class="form-label"><span class="h5">To:</span></label>
+                        <input type="text" class="form-control fs-5" name="TO">
+                    </div>
+                    <div class="mb-5 col-12 col-md-7">
+                        <label class="form-label"><span class="h5">Amount:</span></label>
+                        <input type="text" class="form-control fs-5" name="AMOUNT">
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

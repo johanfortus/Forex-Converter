@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="d-flex justify-content-center ">
+    <div class="container-lg">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 text-center mt-5">
+                <div class='h1 fw-bold'>Your Conversion Result Is:</div>
+            </div>
+            <div class="col-12 text-center mt-5">
+                <div class="h1">
+                    {{ result }} {{to}}
+                </div>
+            </div>
+            <div class="col-7 d-flex justify-content-center my-5">
+                <form action="/">
+                    <button class="btn btn-outline-success">Back to Converter</button>
+                </form>
+            </div>
+    </div>
+</section>
+{% endblock %}
