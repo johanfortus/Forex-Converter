@@ -20,5 +20,5 @@ You can visit the website [here](https://forex-converter-edwq.onrender.com/).
 ## Libraries Used
 
 - [CurrencyConverter](https://pypi.org/project/CurrencyConverter/)
-- 
-<img src="" /> 
+  
+<img src="https://github.com/johanfortus/Forex-Converter/blob/main/Assets/ForexConverter.png" /> 
